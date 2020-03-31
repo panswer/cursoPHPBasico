@@ -6,14 +6,34 @@
 </head>
 <body>
     <?php
-        print "Bienvenidos al curso de PHP <br>"; // Imprime y hace un salto de linea (<br>)
-        print "Hola alumnos <br>";
-        print "Hasta el proximo video";
+        /* iniciar variable */
+        // $nombre;
+        /* Iniciar variable y asignar valor */
+        $nombre="Ricardo";
         /* 
-            Comentario
-            de
-            varias
-            lineas
+            En PHP no se indica el tipo de variable
+        */
+        $edad=18;
+        /* 
+            para concatenar en PHP se utiliza '.'
+        */
+        // print "El nombre del usuario es " . $nombre;
+        // print "El nombre del usuario es $nombre";
+        /* 
+            Si se utiliza comillas simples las variables en el string no seran reconocidas
+            print 'El nombre del usuario es $nombre';
+        */
+        /* 
+            Se puede concatenar en echo de la misma forma que con print
+        */
+        echo "El nombre es $nombre y tiene de edad " . $edad;
+        /* 
+            echo permita separar variables por medio de ','
+            echo $nombre,$edad;
+
+            print siempre retorna 1
+
+            echo consume menos recursos que print
         */
     ?>
 </body>
