@@ -6,17 +6,16 @@
 </head>
 <body>
     <?php
-        $nombre="Ricardo";
-        // include('funcion.php');
-        function dameNombre(){
-            /* 
-                La instruccion global trae la informacion de la variable que se encuentra antes
-            */
-            global $nombre;
-            $nombre="El nombre es $nombre";
+        function incrementeVariable(){
+            // static permite conservar el valor
+            static $contador=0;
+            $contador++;
+            echo $contador . "<br>";
         }
-        dameNombre();
-        echo $nombre;
+        incrementeVariable();
+        incrementeVariable();
+        incrementeVariable();
+        incrementeVariable();
     ?>
 </body>
 </html>
