@@ -12,25 +12,24 @@
 </head>
 <body>
     <?php
-        /* echo "<p class='resaltar'>Esto es un ejemplo de frase</p>";
-        echo '<p class="resaltar">Esto es un ejemplo de frase</p>';
-        echo "<p class=\"resaltar\">Esto es un ejemplo de frase</p>"; */
         /* 
-            strcmp => compara strings con mayusculas o minusculas
-            strcasecmp => compara string sin tomar encuenta si son mayusculas o minusculas
+            define(nombre,valor,boolean)
+            nombre=>Nombre de la constante
+            valor=>Valor de la constante
+            boolean=>Indica si es case sensitive la constante
+            ejemplo:
+
+            define("MIconstante",123,true);
+            echo miConstante;
         */
-        $variable1="casa";
-        $variable2="CASA";
-
-        // $resultado=strcmp($variable1,$variable2); //retorna 1 si no son iguales y 0 si son iguales
-        $resultado=strcasecmp($variable1,$variable2);
-
-        // echo "El resultado es $resultado";
-        if($resultado){
-            echo "No coinciden";
-        }else{
-            echo "Coinciden";
-        }
+        define("AUTOR","Ricardo");
+        define('constante',123,true);
+        /* 
+            Las constantes no se reconocen dentro de un string
+            echo "El autor es AUTOR"
+        */
+        echo AUTOR . '<br>';
+        echo Constante;
     ?>
 </body>
 </html>
