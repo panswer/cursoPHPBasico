@@ -16,6 +16,10 @@
         echo "Este es el primer mensaje <br>";
         echo "Este es el segundo mensaje <br>";
         dameDatos();
+        /* 
+            require => Detiene el flujo si nose encuentra el archivo
+            include => No detiene el flujo si no se encuentra el archivo
+        */
     ?>
 </body>
 </html>
