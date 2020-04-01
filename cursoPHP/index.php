@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php
-        /* iniciar variable */
+        /* declarar variable */
         // $nombre;
         /* Iniciar variable y asignar valor */
         $nombre="Ricardo";
@@ -26,6 +26,7 @@
         /* 
             Se puede concatenar en echo de la misma forma que con print
         */
+        
         echo "El nombre es $nombre y tiene de edad " . $edad;
         /* 
             echo permita separar variables por medio de ','
@@ -34,6 +35,10 @@
             print siempre retorna 1
 
             echo consume menos recursos que print
+        */
+        /* 
+            print es una funcion
+            echo es una expresion
         */
     ?>
 </body>
