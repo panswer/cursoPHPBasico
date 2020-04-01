@@ -6,40 +6,16 @@
 </head>
 <body>
     <?php
-        /* declarar variable */
-        // $nombre;
-        /* Iniciar variable y asignar valor */
-        $nombre="Ricardo";
-        /* 
-            En PHP no se indica el tipo de variable
-        */
-        $edad=18;
-        /* 
-            para concatenar en PHP se utiliza '.'
-        */
-        // print "El nombre del usuario es " . $nombre;
-        // print "El nombre del usuario es $nombre";
-        /* 
-            Si se utiliza comillas simples las variables en el string no seran reconocidas
-            print 'El nombre del usuario es $nombre';
-        */
-        /* 
-            Se puede concatenar en echo de la misma forma que con print
-        */
-        
-        echo "El nombre es $nombre y tiene de edad " . $edad;
-        /* 
-            echo permita separar variables por medio de ','
-            echo $nombre,$edad;
-
-            print siempre retorna 1
-
-            echo consume menos recursos que print
-        */
-        /* 
-            print es una funcion
-            echo es una expresion
-        */
+    // function dameDatos(){
+    //     echo "Este es el mensaje del interior de la funcion <br>";
+    // }
+    ?>
+    <?php
+        /* Include se utiliza para poder utilizar codigo externo de un archivo php */
+        include("proporcionaDatos.php");
+        echo "Este es el primer mensaje <br>";
+        echo "Este es el segundo mensaje <br>";
+        dameDatos();
     ?>
 </body>
 </html>
