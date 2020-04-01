@@ -6,20 +6,17 @@
 </head>
 <body>
     <?php
-    // function dameDatos(){
-    //     echo "Este es el mensaje del interior de la funcion <br>";
-    // }
-    ?>
-    <?php
-        /* Include se utiliza para poder utilizar codigo externo de un archivo php */
-        include("proporcionaDatos.php");
-        echo "Este es el primer mensaje <br>";
-        echo "Este es el segundo mensaje <br>";
-        dameDatos();
-        /* 
-            require => Detiene el flujo si nose encuentra el archivo
-            include => No detiene el flujo si no se encuentra el archivo
-        */
+        $nombre="Ricardo";
+        // include('funcion.php');
+        function dameNombre(){
+            /* 
+                La instruccion global trae la informacion de la variable que se encuentra antes
+            */
+            global $nombre;
+            $nombre="El nombre es $nombre";
+        }
+        dameNombre();
+        echo $nombre;
     ?>
 </body>
 </html>
