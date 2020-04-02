@@ -24,24 +24,19 @@ class Coche{
     }
 }
 /* --------------------------------- */
-class Camion{
-    var $ruedas;
-    var $color;
-    var $motor;
-    /* Constructor */
+class Camion extends Coche{
     function Camion(){
         $this->ruedas=8;
         $this->color="Griss";
         $this->motor=2600;
-     }
+    }
+    function Establece_Color($color_camion,$nombre_camion){
+        $this->color=$color_camion;
+        echo "El color de $nombre_camion es: " . $this->color . "<br>";
+    }
     function Arrancar(){
-        echo "Estoy arrancando<br>";
-    }
-    function Girar(){
-        echo "Estoy girando<br>";
-    }
-    function Frenar(){
-        echo "Estoy frenando<br>";
+        parent::Arrancar();
+        echo "Camion arrancado<br>";
     }
 }
 ?>

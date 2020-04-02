@@ -45,7 +45,7 @@
         // $mazda->Girar();
 
         // echo $mazda->ruedas;
-        include("./vehiculos.php");
+        include("vehiculos.php");
         /* Si el constructor no recibe parametros no es necesario los parametros */
         $mazda = new Coche();
 
@@ -53,6 +53,9 @@
 
         echo "El mazda tiene " . $mazda->ruedas . " ruedas <br>";
         echo "El pegaso tiene " . $pegaso->ruedas . " ruedas <br>";
+        $pegaso->Establece_Color("Negro","Pegaso");
+
+        $pegaso->Arrancar();
     ?>
 </body>
 
