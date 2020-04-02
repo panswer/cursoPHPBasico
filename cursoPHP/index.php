@@ -12,25 +12,9 @@
 </head>
 <body>
     <?php
-        /* 
-            define(nombre,valor,boolean)
-            nombre=>Nombre de la constante
-            valor=>Valor de la constante
-            boolean=>Indica si es case sensitive la constante
-            ejemplo:
-
-            define("MIconstante",123,true);
-            echo miConstante;
-        */
-        define("AUTOR","Ricardo");
-        define('constante',123,true);
-        /* 
-            Las constantes no se reconocen dentro de un string
-            echo "El autor es AUTOR"
-        */
-        echo AUTOR . '<br>';
-        echo "El autor es: ". AUTOR . "<br>";
-        echo Constante;
+        define("AUTOR","Ricardo",true);
+        echo "La linea de esta instruccion es: " . __LINE__ . "<br>";
+        echo "Estamos trabajando con este fichero: " . __FILE__;
     ?>
 </body>
 </html>
