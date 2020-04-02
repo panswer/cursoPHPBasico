@@ -9,24 +9,20 @@
 <body>
     <!-- Codigo PHP -->
     <?php
-        // $palabra="ricardo";
-        // echo (strtolower($palabra));
-        // echo (strtoupper($palabra));
-        // function suma ($num1,$num2){
-        //     $resultado=$num1+$num2;
-        //     return $resultado;
+        // function Incremento (&$valor1){
+        //     return ++$valor1;
         // }
-        // suma(5,7);
-        function Frase_Mayus($frase,$conversion=true){
-            $resultado=strtolower($frase);
-            if($conversion==true){
-                $resultado=ucwords($frase);
-            }else{
-                $resultado=strtoupper($frase);
-            }
-            return $resultado;
+        // $numero = 5;
+        // echo (Incremento($numero) . '<br>');
+        // echo ($numero);
+        function Cambia_Mayus (&$param) {
+            $param=strtolower($param);
+            $param=ucwords($param);
+            return $param;
         }
-        echo (Frase_Mayus('Esto es una prueba',false));
+        $cadena = "hOlA mUnDo";
+        echo Cambia_Mayus($cadena) . "<br>";
+        echo $cadena;
     ?>
 </body>
 
