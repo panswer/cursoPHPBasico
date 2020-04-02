@@ -1,6 +1,6 @@
 <?php
 class Coche{
-    var $ruedas;
+    private $ruedas;
     var $color;
     var $motor;
     /* Constructor */
