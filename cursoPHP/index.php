@@ -20,8 +20,12 @@
 
         $pegaso = new Camion();
 
-        echo "El mazda tiene " . $mazda->ruedas . " ruedas <br>";
-        echo "El pegaso tiene " . $pegaso->ruedas . " ruedas <br>";
+        // echo "El mazda tiene " . $mazda->ruedas . " ruedas <br>";
+        // echo "El pegaso tiene " . $pegaso->ruedas . " ruedas <br>";
+        echo "El mazda tiene " . $mazda->Get_Ruedas() . " ruedas<br>";
+        echo "El pegaso tiene " . $pegaso->Get_Ruedas() . " ruedas<br>";
+
+        echo "El mazda tiene un motor de " . $mazda->Get_Motor() . "cc <br>";
         
         // $pegaso->Establece_Color("Negro","Pegaso");
         // $pegaso->Arrancar();
