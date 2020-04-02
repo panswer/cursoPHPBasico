@@ -9,21 +9,24 @@
 <body>
     <!-- Codigo PHP -->
     <?php
-        // rand() debuelve un valor aleatorio
-        // Sin argumento debuelve un numero aleatorio
-        // $num1=rand();
-        // Con argumento debuelve un numero aleatorio comprendido entre los valores indicados. Primer parametro el valor minimo, segundo parametro valor maximo.
-        // $num1=rand(50,100);
-        // echo "El numero es: $num1";
-        // $num1=pow(5,3);
-        /* 
-            PHP cambia el tipo de dato dependiendo de el valor a guardar
-        */
-        $num1="5";
-
-        $resultado=(int)($num1);
-        
-        echo "El resultado es: " . round($num1,2);
+        // $palabra="ricardo";
+        // echo (strtolower($palabra));
+        // echo (strtoupper($palabra));
+        // function suma ($num1,$num2){
+        //     $resultado=$num1+$num2;
+        //     return $resultado;
+        // }
+        // suma(5,7);
+        function Frase_Mayus($frase,$conversion=true){
+            $resultado=strtolower($frase);
+            if($conversion==true){
+                $resultado=ucwords($frase);
+            }else{
+                $resultado=strtoupper($frase);
+            }
+            return $resultado;
+        }
+        echo (Frase_Mayus('Esto es una prueba',false));
     ?>
 </body>
 
