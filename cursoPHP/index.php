@@ -29,6 +29,7 @@
             echo "El autor es AUTOR"
         */
         echo AUTOR . '<br>';
+        echo "El autor es: ". AUTOR . "<br>";
         echo Constante;
     ?>
 </body>
