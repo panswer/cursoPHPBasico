@@ -14,8 +14,8 @@
         $operacion=$_POST["operation"];
         $resultado;
         Calcular($operacion,$numero1,$numero2);
-        $texto = "<p class='resultado'>El resultado es: $resultado</p>";
-        echo $texto;
+        // $texto = "<p class='resultado'>El resultado es: $resultado</p>";
+        // echo $texto;
     }
 
     function Calcular ($calculo) {
@@ -36,6 +36,12 @@
         }
         if(!strcmp("Modulo",$calculo)){
             $resultado=$numero1%$numero2;
+        }
+        if(!strcmp("Incremento",$calculo)){
+            $resultado=++$numero1;
+        }
+        if(!strcmp("Decremento",$calculo)){
+            $resultado=--$numero1;
         }
     }
 ?>
