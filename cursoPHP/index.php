@@ -15,7 +15,9 @@
             Protected => Accesible desde la propia clase y clases heredadas
         */
         include("concercionario.php");
-        
+
+        Compra_Vehiculo::Descuento_Gobierno();
+
         $compra_antonio = new Compra_Vehiculo("compacto");
         $compra_antonio->Climatizador();
         $compra_antonio->Tapiceria_Cuero("blanco");

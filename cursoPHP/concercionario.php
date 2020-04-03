@@ -3,7 +3,7 @@
 
         private $precio_base;
 
-        static $ayuda=4500;
+        private static $ayuda=0;
 
         function Compra_Vehiculo($gama){
             if($gama=="urbano"){
@@ -14,6 +14,12 @@
                 $this->precio_base=30000;
             }
         }//Fin de constructor
+
+        static function Descuento_Gobierno(){
+            if(date("m-d-y")>"05-01-15"){
+                self::$ayuda=4500;
+            }
+        }
 
         function Climatizador(){
             $this->precio_base+=2000;
