@@ -14,21 +14,17 @@
             Private => Accesible desde la propia clase
             Protected => Accesible desde la propia clase y clases heredadas
         */
-        include("vehiculos.php");
-        /* Si el constructor no recibe parametros no es necesario los parametros */
-        $mazda = new Coche();
-
-        $pegaso = new Camion();
-
-        // echo "El mazda tiene " . $mazda->ruedas . " ruedas <br>";
-        // echo "El pegaso tiene " . $pegaso->ruedas . " ruedas <br>";
-        echo "El mazda tiene " . $mazda->Get_Ruedas() . " ruedas<br>";
-        echo "El pegaso tiene " . $pegaso->Get_Ruedas() . " ruedas<br>";
-
-        echo "El mazda tiene un motor de " . $mazda->Get_Motor() . "cc <br>";
+        include("concercionario.php");
         
-        // $pegaso->Establece_Color("Negro","Pegaso");
-        // $pegaso->Arrancar();
+        $compra_antonio = new Compra_Vehiculo("compacto");
+        $compra_antonio->Climatizador();
+        $compra_antonio->Tapiceria_Cuero("blanco");
+        echo $compra_antonio->Get_Precio();
+
+        $compra_Ana = new Compra_Vehiculo("compacto");
+        $compra_Ana->Climatizador();
+        $compra_Ana->Tapiceria_Cuero("rojo");
+        echo $compra_Ana->Get_Precio();
     ?>
 </body>
 
