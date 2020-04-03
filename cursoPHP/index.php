@@ -9,24 +9,20 @@
 <body>
     <!-- Codigo PHP -->
     <?php
+        /* Array indexado */
+        // $semana[]="Lunes";
+        // $semana[]="Martes";
+        // $semana[]="Miercoles";
         /* 
-            Public => Accesible desde cualquier parte
-            Private => Accesible desde la propia clase
-            Protected => Accesible desde la propia clase y clases heredadas
+            Se puede rellenar array sin utilizar indixe (Su efecto es como un push). De igual forma se pueden ingresar valores indicando el index, teniendo en cuenta que los indices que no sean definidos marcaran error si se llega a tocar alguno
         */
-        include("concercionario.php");
+        /* Otra forma de crear un array indexado */
+        // $semana=array("Lunes","Martes","Miercoles");
+        // echo $semana[2];
 
-        Compra_Vehiculo::Descuento_Gobierno();
-
-        $compra_antonio = new Compra_Vehiculo("compacto");
-        $compra_antonio->Climatizador();
-        $compra_antonio->Tapiceria_Cuero("blanco");
-        echo $compra_antonio->Get_Precio();
-
-        $compra_Ana = new Compra_Vehiculo("compacto");
-        $compra_Ana->Climatizador();
-        $compra_Ana->Tapiceria_Cuero("rojo");
-        echo $compra_Ana->Get_Precio();
+        /* Array asociativo */
+        $datos=array("Nombre"=>"Ricardo","Apellido"=>"Mejias","Edad"=>22);
+        echo $datos["Apellido"];
     ?>
 </body>
 
